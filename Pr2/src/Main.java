@@ -1,5 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Dog T = new Dog(12,"Killer8000");
+        System.out.println(T.ToString());
     }
 }
