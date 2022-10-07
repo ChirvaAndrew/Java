@@ -1,5 +1,5 @@
 public class ShapeTest {
-    public static void main(String[] args){
+    public ShapeTest(){
         Shape test1 = new Shape();
         test1.setName("square");
         test1.setNumberofcorners(4);

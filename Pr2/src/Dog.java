@@ -28,6 +28,6 @@ public class Dog {
     }
     public String ToString()
     {
-        return name + age;
+        return name + " " + age;
     }
 }
