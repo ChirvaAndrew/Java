@@ -4,8 +4,8 @@ public class Human {
     Leg newLeg = new Leg();
     Head newHead = new Head();
     Hand newHand = new Hand();
-    public Human()
-    {
+
+    public Human() {
         newHand.testHand();
         newHead.testHead();
         newLeg.testLeg();

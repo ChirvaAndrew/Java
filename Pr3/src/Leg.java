@@ -1,6 +1,5 @@
 public class Leg {
-    public void testLeg()
-    {
+    public void testLeg() {
         System.out.println("Leg");
     }
 }

@@ -1,6 +1,5 @@
 public class Head {
-    public void testHead()
-    {
+    public void testHead() {
         System.out.println("Head");
     }
 }

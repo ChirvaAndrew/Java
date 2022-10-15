@@ -1,6 +1,5 @@
 public class Hand {
-    public void testHand()
-    {
+    public void testHand() {
         System.out.println("Hand");
     }
 }
