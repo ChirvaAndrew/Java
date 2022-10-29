@@ -46,5 +46,22 @@ public class Main {
         System.out.println(sq1.getColor());
         System.out.println(sq1.getSide());
         System.out.println(sq1.getLength());
+
+
+
+
+        MovablePoint myPoint = new MovablePoint(1,2,1,4);
+        System.out.println(myPoint.toString());
+        myPoint.moveRight();
+        System.out.println(myPoint.toString());
+        MovableCircle myCircle = new MovableCircle(0,0,2,2,5);
+        myCircle.moveUp();
+        System.out.println(myCircle.toString());
+        MovableRectangle myRec = new MovableRectangle(-1, 3,3,0,2,4);
+        System.out.println(myRec.toString());
+        myRec.moveDown();
+        System.out.println(myRec.toString());
     }
+
+
 }
