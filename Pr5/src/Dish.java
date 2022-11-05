@@ -1,6 +1,6 @@
 import java.awt.*;
 
-public class Dish {
+public abstract class Dish {
     private double depth;
     private String shape;
 
