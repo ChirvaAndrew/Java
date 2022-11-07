@@ -14,5 +14,8 @@ public class Counter {
         attemt++;
 
     }
+    public void down(){
+        attemt--;
+    }
 
 }
