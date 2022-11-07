@@ -12,7 +12,7 @@ public class Main {
         Counter attemt = new Counter(0);
         //Генерация случайного числа
         int rnd = (int) (Math.random() * 20.);
-        //System.out.println(rnd);
+        System.out.println(rnd);
 
         //Окно
         JFrame box = new JFrame("игра-угадайка");
@@ -47,7 +47,9 @@ public class Main {
     }
 
     static void click(JTextArea enter, int rnd, Counter attemt, JLabel output, JLabel counter, JButton submit) {
+
         attemt.up();
+        System.out.println("Hi!");
         if (!Objects.equals(enter.getText(), "") && Integer.parseInt(enter.getText()) == rnd) {
             output.setText("Верно!");
             submit.setVisible(false);
@@ -64,7 +66,7 @@ public class Main {
         }
         counter.setText("Счётчик попыток " + attemt.getAttemt() + "/3");
 
-        if (attemt.getAttemt() == 3)
+        if (attemt.getAttemt() == 3 && Integer.parseInt(enter.getText()) != rnd)
         {
             output.setBounds(0, 160, 2000, 30);
             output.setText("Нет. Вы исчерпали количество попыток.\n загаданное число: " + rnd);
