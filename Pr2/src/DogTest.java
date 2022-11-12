@@ -1,7 +1,10 @@
 /*
 public class DogTest {
 
-
+    private Dog[](int l,Dog[], n)
+    {
+        new
+    }
     private Dog addXDogs(int x){
         Dog massDogs[x] = new Dog[];
         return massDogs[];
@@ -15,5 +18,4 @@ public class DogTest {
             massDogs
         }
     }
-}
-*/
+}*/

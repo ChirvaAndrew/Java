@@ -15,8 +15,7 @@ public class Team {
     }
 
     public void click() {
-        score ++;
-
+        score++;
     }
 
 }

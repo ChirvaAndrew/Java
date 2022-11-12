@@ -1,4 +1,4 @@
-//import org.jetbrains.annotations.NotNull;
+package task1;//import org.jetbrains.annotations.NotNull;
 
 import javax.swing.*;
 import javax.xml.transform.Result;
@@ -25,7 +25,6 @@ public class Main {
 
         JLabel counter = new JLabel("Счётчик попыток " + attemt.getAttemt() + "/3");
         counter.setBounds(0, 25, 200, 15);
-
         JLabel output = new JLabel("Пока не было попыток. Удачи!");
         output.setBounds(70, 160, 2000, 30);
 
@@ -49,7 +48,7 @@ public class Main {
     static void click(JTextArea enter, int rnd, Counter attemt, JLabel output, JLabel counter, JButton submit) {
 
         attemt.up();
-        System.out.println("Hi!");
+        //System.out.println("Hi!");
         if (!Objects.equals(enter.getText(), "") && Integer.parseInt(enter.getText()) == rnd) {
             output.setText("Верно!");
             submit.setVisible(false);
@@ -57,12 +56,10 @@ public class Main {
         }
         if (!Objects.equals(enter.getText(), "") && Integer.parseInt(enter.getText()) > rnd) {
             output.setText("Нет, загаданное число меньше");
-            enter.setText(null);
         }
 
         if (!Objects.equals(enter.getText(), "") && Integer.parseInt(enter.getText()) < rnd) {
             output.setText("Нет, загаданное число больше");
-            enter.setText(null);
         }
         counter.setText("Счётчик попыток " + attemt.getAttemt() + "/3");
 
@@ -72,6 +69,7 @@ public class Main {
             output.setText("Нет. Вы исчерпали количество попыток.\n загаданное число: " + rnd);
             submit.setVisible(false);
         }
+        enter.setText(null);
     }
 
 
