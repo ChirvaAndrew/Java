@@ -48,7 +48,6 @@ public class Main {
     static void click(JTextArea enter, int rnd, Counter attemt, JLabel output, JLabel counter, JButton submit) {
 
         attemt.up();
-        //System.out.println("Hi!");
         if (!Objects.equals(enter.getText(), "") && Integer.parseInt(enter.getText()) == rnd) {
             output.setText("Верно!");
             submit.setVisible(false);

@@ -1,5 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        ShapeTest test1 = new ShapeTest();
+        DogTest test = new DogTest();
+        test.addDog();
+        Dog one = test.DogOut(0);
+        System.out.println(one.getName() + " " + one.getAge());
+        test.AllDogsOut();
+
     }
 }
