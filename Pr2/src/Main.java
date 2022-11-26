@@ -5,6 +5,5 @@ public class Main {
         Dog one = test.DogOut(0);
         System.out.println(one.getName() + " " + one.getAge());
         test.AllDogsOut();
-
     }
 }

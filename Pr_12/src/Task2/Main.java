@@ -41,7 +41,7 @@ public class Main {
         }
 
         SortingStudentsByGPA a = new SortingStudentsByGPA();
-        studentList = a.sort(studentList, 0, studentList.length - 1);
+        //studentList = a.sort(studentList, 0, studentList.length - 1);
         System.out.println(studentList);
 
     }

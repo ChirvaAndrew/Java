@@ -6,15 +6,18 @@ public class DogTest {
     private ArrayList<Dog> DogMass = new ArrayList<>();
 
     public void addDog() {
+        boolean breakflag = false;
         while (true) {
-            System.out.println("1 (Или любой другой символ кроме нуля) - Добавить ещё собаку\n0 - Прекратить добавлять собак");
-            int a = sc.nextInt();
-            if (a == 0) break;
+            if (breakflag) break;
             else {
-                System.out.println("Введите имя новой собаки >> ");
+                System.out.println("Введите имя новой собаки(0 для выхода) >> ");
                 String name = sc.next();
+                if (name.equals("0")) {
+                    breakflag = true;
+                    break;
+                }
                 System.out.println("Введите возраст новой собаки >> ");
-                a = sc.nextInt();
+                int a = sc.nextInt();
                 Dog newDog = new Dog(a, name);
                 DogMass.add(newDog);
             }
