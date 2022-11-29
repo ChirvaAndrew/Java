@@ -45,6 +45,7 @@ public class Main {
         box.add(textArea);
         box.add(colour);
         box.setSize(400, 300);
+        box.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         box.setLayout(null);
         box.setVisible(true);
     }

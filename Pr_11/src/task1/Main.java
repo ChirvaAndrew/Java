@@ -51,6 +51,7 @@ public class Main {
         box.add(submit);
         box.add(output);
         box.setSize(400, 300);
+        box.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         box.setLayout(null);
         box.setVisible(true);
         //System.out.println(i);
@@ -81,4 +82,3 @@ public class Main {
     }
 
 }
-

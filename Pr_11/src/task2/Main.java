@@ -54,6 +54,7 @@ public class Main {
         box.add(bottom);
 
         box.setSize(300, 300);
+        box.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         box.setLayout(null);
         box.setVisible(true);
     }

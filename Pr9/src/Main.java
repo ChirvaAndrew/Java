@@ -38,6 +38,7 @@ public class Main {
         box.add(secondTeam);
         box.add(last);
         box.add(winner);
+        box.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         box.setSize(300, 300);
         box.setLayout(null);
         box.setVisible(true);
