@@ -1,3 +1,4 @@
+/*
 public class Main {
     public static void main(String[] args) {
         //Dish first = new Dish();
@@ -15,4 +16,4 @@ public class Main {
         fourth.setTransparent(true);
         //System.out.println(fourth.getVolume() + " " + fourth.getTransparent());
     }
-}
+}*/
