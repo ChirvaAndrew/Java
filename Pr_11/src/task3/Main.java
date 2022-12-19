@@ -1,3 +1,14 @@
+/*
+Реализуйте приложение с JTextArea и двумя меню:
+
+        Цвет: предусмотрена возможность выбора одного из трёх заданных разработчиком цветов,
+
+        Шрифт: предусмотрена возможность выбора одного из трёх заданных разработчиком шрифтов.
+
+        Нужно написать программу, которая с помощью меню может изменять шрифт и цвет текста, написанного пользователем в JTextArea.
+*/
+
+
 package task3;
 
 import javax.swing.*;
@@ -34,6 +45,7 @@ public class Main {
         box.add(textArea);
         box.add(colour);
         box.setSize(400, 300);
+        box.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         box.setLayout(null);
         box.setVisible(true);
     }

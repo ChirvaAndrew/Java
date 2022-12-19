@@ -3,8 +3,7 @@ package task1;
 public class Counter {
     private int attemt;
 
-    public Counter(int attemt)
-    {
+    public Counter(int attemt) {
         this.attemt = attemt;
     }
 
@@ -16,7 +15,8 @@ public class Counter {
         attemt++;
 
     }
-    public void down(){
+
+    public void down() {
         attemt--;
     }
 

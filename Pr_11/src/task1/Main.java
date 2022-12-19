@@ -1,9 +1,20 @@
-package task1;//import org.jetbrains.annotations.NotNull;
+/*
+Реализуйте игру-угадайку, которая имеет одно текстовое поле и одну кнопку.
+
+        Игра предлагает пользователю угадать число между 0 и 20 и дает ему три попытки.
+
+        a. Если пользователю не удаётся угадать, то выводится сообщение о том, что пользователь допустил ошибку - число должно быть меньше или больше в зависимости от ситуации.
+
+        b. Если пользователь попытался угадать три раза - Game over.
+
+        c. Если пользователь угадал, то программа поздравляет пользователя с победой.
+
+
+*/
+
+package task1;
 
 import javax.swing.*;
-import javax.xml.transform.Result;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.util.Objects;
 
 
@@ -40,6 +51,7 @@ public class Main {
         box.add(submit);
         box.add(output);
         box.setSize(400, 300);
+        box.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         box.setLayout(null);
         box.setVisible(true);
         //System.out.println(i);
@@ -48,6 +60,7 @@ public class Main {
     static void click(JTextArea enter, int rnd, Counter attemt, JLabel output, JLabel counter, JButton submit) {
 
         attemt.up();
+        counter.setText("Счётчик попыток " + attemt.getAttemt() + "/3");
         if (!Objects.equals(enter.getText(), "") && Integer.parseInt(enter.getText()) == rnd) {
             output.setText("Верно!");
             submit.setVisible(false);
@@ -60,10 +73,7 @@ public class Main {
         if (!Objects.equals(enter.getText(), "") && Integer.parseInt(enter.getText()) < rnd) {
             output.setText("Нет, загаданное число больше");
         }
-        counter.setText("Счётчик попыток " + attemt.getAttemt() + "/3");
-
-        if (attemt.getAttemt() == 3 && Integer.parseInt(enter.getText()) != rnd)
-        {
+        if (attemt.getAttemt() == 3 && Integer.parseInt(enter.getText()) != rnd) {
             output.setBounds(0, 160, 2000, 30);
             output.setText("Нет. Вы исчерпали количество попыток.\n загаданное число: " + rnd);
             submit.setVisible(false);
@@ -71,6 +81,4 @@ public class Main {
         enter.setText(null);
     }
 
-
 }
-
