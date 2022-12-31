@@ -27,8 +27,8 @@ public class Main {
 
         //2
         String developerName = "Андрей Чирва";
-        Date taskReceivedDate = new Date(2022, 8, 1);
-        Date taskSubmittedDate = new Date(2022, 11, 31);
+        Date taskReceivedDate = new Date(122, 8, 1);
+        Date taskSubmittedDate = new Date(122, 11, 31);
         System.out.println("Developer name: " + developerName);
         System.out.println("Task received date: " + taskReceivedDate);
         System.out.println("Task submitted date: " + taskSubmittedDate);
