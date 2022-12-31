@@ -18,7 +18,7 @@ import javax.swing.*;
 import java.util.Objects;
 
 
-public class Main {
+public class task1 {
     public static void main(String[] args) {
         Counter attemt = new Counter(0);
         //Генерация случайного числа

@@ -15,7 +15,7 @@ import javax.swing.*;
 import java.awt.*;
 
 
-public class Main {
+public class task3 {
     public static void main(String[] args) {
         //Окно
         JFrame box = new JFrame("Оборотень");

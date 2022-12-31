@@ -19,7 +19,7 @@ package task2;
 
 import javax.swing.*;
 
-public class Main {
+public class task2 {
     public static void main(String[] args) {
         //Окно
         JFrame box = new JFrame("Макет границы");
