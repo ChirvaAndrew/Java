@@ -1,0 +1,27 @@
+Test Results
+CurrencyInfoTest
+testSetName
+Status: PASSED
+
+Expected result: "US Dollar"
+
+Actual result: "US Dollar"
+
+testSetSymbol
+Status: PASSED
+
+Expected result: "$"
+
+Actual result: "$"
+
+testSetExchangeRate
+Status: PASSED
+
+Expected result: 1.0
+
+Actual result: 1.0
+
+Overall results
+All tests passed: 3
+
+Failed tests: 0
