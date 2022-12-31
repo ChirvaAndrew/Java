@@ -1,6 +1,6 @@
 //Реализуйте диаграмму ниже при помощи паттерна декоратор.
 
-public class Main {
+public class Dec {
     public static void main(String[] args) {
         Circle circle = new Circle();
         Rectangle rectangle = new Rectangle();
