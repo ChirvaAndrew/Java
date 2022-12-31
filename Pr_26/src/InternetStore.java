@@ -4,16 +4,13 @@
 // В данном случае конкретные стратегии платёжных методов не только проводят саму оплату, но и собирают необходимые данные в форме заказа.
 
 
-
-
-
 import java.security.cert.TrustAnchor;
 import java.util.Scanner;
 
 public class InternetStore {
     Scanner scanner = new Scanner(System.in);
 
-        public String getProduct () {
+    public String getProduct() {
         System.out.println("введите что вы хотите купить: ");
         return scanner.nextLine();
     }
@@ -56,8 +53,6 @@ public class InternetStore {
 
     public static void main(String[] args) {
         InternetStore shop = new InternetStore();
-        while (true) {
-            shop.menu();
-        }
+        shop.menu();
     }
 }
